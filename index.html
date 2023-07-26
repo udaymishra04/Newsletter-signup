@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <section class="app">
+    <section class="sign-up">
+      <div class="hero">
+        <picture class="picture">
+          <source srcset="assets\images\illustration-sign-up-desktop.svg" media="(min-width: 376px)" width="400" height="593">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign up image" class="image">
+        </picture>
+      </div>
+      <div class="content">
+        <h1 class="sign-up-heading">
+  Stay updated!
+        </h1>
+        <p class="join">
+  Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="list">
+          <div class="list-item">
+            <img src="assets/images/icon-list.svg" alt="icon-list" width="21" height="21">
+          <p>
+            Product discovery and building what matters
+          </p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="icon-list" width="21" height="21">
+          <p>
+            Measuring to ensure updates are a success
+          </p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="icon-list" width="21" height="21">
+          <p>
+            And much more!
+          </p>
+        </div>
+        </div>
+        <form>
+          <!-- Add error-label and error-input class using javascript whenever there is an error -->
+          <label for="email" class="email-label">Email address</label>
+          <label for="email" id="error-label" style="display: none;">Valid email required</label>
+          <input type="text" name="email" placeholder="email@company.com" 
+          id="error-input">
+          <button type="button" name="email" class="subscribe-btn">Subscribe to monthly newsletter</button>
+          
+        </form>
+      </div>
+    </section>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <section class="success" style="display: none;">
+    <div>
+    <img src="assets/images/icon-list.svg" alt="icon-list" width="21" height="21">
+    <h1 class="heading">
+      Thanks for subscribing!
+    </h1>
+    <p>  
+      A confirmation email has been sent to
+      <b><span class="success-email">
+       ash@loremcompany.com</span></b>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+  </div>
+      <button type="button" class="dismiss-message">Dismiss message</button>
+  </section>
+  </section>
+  <!-- Success message end -->
+
+  <!-- Adding Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
